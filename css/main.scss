@@ -2,72 +2,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
 
-.container{
-    // max-width: 900px;
-}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
 
 $nav-hover: #019CE4;
-$nav-primary: #003F72;
-
+$nav-primary: #023E70;
 
 
 .nav_wrapper{
-    display: flex;
+    background-color: rgba($color: $nav-primary, $alpha: 1);
+    overflow: hidden;
+    
+}
+
+
+.navbar{
     align-items: center;
-}
-.nav_wrapper-inner{
-    display: flex;
-}
-.nav_left{
-    width: 70%;
-    height: 50px;
-    background-color: green;
-}
-
-.nav_right{
-    width: 30%;
-    height: 50px;
-    background-color: blue;
-    position: relative;
-
-    &:after{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: orange;
-        top: 0;
-        left: 0;
+    padding: 0;
+    img{
+        height: 2rem;
+        margin-right: 3rem;
     }
 }
 
-.col-md-9-inner{
-    min-width: 700px;
-    height: 30px;
-    background-color: yellow;
-    margin-left: auto;
+.navbar-collapse{
+    justify-content: space-between;
+}
+.navbar-nav{
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 1rem .5rem;
+    color: white;
+    font-size: calc(.55rem + .5vw);
+    font-weight: 500;
+    small{
+        display: block;
+    }
+}
+
+.nav_right{
+    position: relative;
+    background-color: white;
+    // z-index: 5;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 2000px;
+        left: 100%;
+        background-color: white;
+        height: 100%;
+        // z-index: -1;
+    }
+    li:nth-child(2) {
+        .nav-link{
+        padding-right: 0;
+        }
+      }
+
+    
+}
+
+.navbar-light .navbar-nav{
+    justify-content: space-between!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
 }
 
 
-
-.col-md-3-inner{
-    min-width: 258px;
-    height: 30px;
-    background-color: gray;
-    margin-right: auto;
-}
-
-.container{
-    height: 40px;
-    background-color: orange;
-}
-
-.abc{
-    max-width: 959px;
-    margin: 0 auto;
-    height: 40px;
-    background-color: green;
-}

@@ -9228,66 +9228,73 @@ body {
 }
 
 .nav_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-color: #023e70;
+  overflow: hidden;
+}
+
+.navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
 }
 
-.nav_wrapper-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.navbar img {
+  height: 2rem;
+  margin-right: 3rem;
 }
 
-.nav_left {
-  width: 70%;
-  height: 50px;
-  background-color: green;
+.navbar-collapse {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 1rem .5rem;
+  color: white;
+  font-size: calc(.55rem + .5vw);
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link small {
+  display: block;
 }
 
 .nav_right {
-  width: 30%;
-  height: 50px;
-  background-color: blue;
   position: relative;
+  background-color: white;
 }
 
-.nav_right:after {
+.nav_right:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 2000px;
+  left: 100%;
+  background-color: white;
   height: 100%;
-  background-color: orange;
-  top: 0;
-  left: 0;
 }
 
-.col-md-9-inner {
-  min-width: 700px;
-  height: 30px;
-  background-color: yellow;
-  margin-left: auto;
+.nav_right li:nth-child(2) .nav-link {
+  padding-right: 0;
 }
 
-.col-md-3-inner {
-  min-width: 258px;
-  height: 30px;
-  background-color: gray;
-  margin-right: auto;
+.navbar-light .navbar-nav {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
 }
 
-.container {
-  height: 40px;
-  background-color: orange;
-}
-
-.abc {
-  max-width: 959px;
-  margin: 0 auto;
-  height: 40px;
-  background-color: green;
+.navbar-light .navbar-nav .nav-link {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
