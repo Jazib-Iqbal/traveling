@@ -16,112 +16,28 @@
 
   <div class="site_wrapper">
 
-    <header class="top_nav">
-      <div class="container">
-        <div class="top_nav-inner">
-          <div class="row">
+    <header class="nav_wrapper">
+      <div class="nav_left">
+        <div class="nav_left-inner">
 
-            <div class="col-lg-2">
-              <img src="./img/Screenshot_1.jpg" alt="">
-            </div><!-- /.col-lg-2 -->
-
-            <div class="col-lg-7">
-              <div class="main_nav">
-                
-                <nav class="navbar navbar-expand-lg navbar-light">
-                  <div class="container-fluid">
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                                                
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                      </ul>
-                      
-                    </div>
-                  </div>
-                </nav>
-
-              </div><!-- /.main_nav -->
-              
-            </div><!-- /.col-lg-2 -->
-            
-            <div class="col-lg-3">
-
-              <div class="nav_right">
-                <span class="icon_bgc">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                </span>
-                
-
-                <h2>1-1212-123-1234
-                  <small>Toll Free & 24/7 Available</small>
-                </h2>
-              </div>
-              <!-- /.nav_right -->              
-
-            </div><!-- /.col-lg-2 -->
-            
-
-          </div><!-- /.row -->
-          
-        </div><!-- /.top_nav-inner -->
-        
+        </div>
+        <!-- /.nav_left-inner -->
       </div>
+
+      <div class="nav_right">
+        <div class="nav_right-inner">
+
+        </div>
+        <!-- /.nav_right-inner -->
+      </div>
+
+
+
     </header>
 
     <main>
+      <div class="container"></div>
+      <div class="abc"></div>
 
     </main>
 
@@ -161,8 +77,8 @@
     });
 
 
-    
-    
+
+
 
     var slider1 = new Swiper('.slider1', {
       effect: 'slide',
@@ -182,31 +98,31 @@
       },
 
       breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
       scrollbar: {
         el: '.swiper-scrollbar',
       },
     });
 
 
-    var slider2 = new Swiper ('.slider2', {
+    var slider2 = new Swiper('.slider2', {
       effect: 'slide',
       slidesPerView: 1,
       spaceBetween: 10,
       loop: true,
-      autoplay:true,
+      autoplay: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -220,24 +136,23 @@
       },
 
       breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
       scrollbar: {
         el: '.swiper-scrollbar',
       },
-});
-
+    });
   </script>
 
 
