@@ -3,37 +3,39 @@
 
 
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
 }
 
 $nav-hover: #019CE4;
 $nav-primary: #023E70;
 
 
-.nav_wrapper{
+
+.nav_wrapper {
     background-color: rgba($color: $nav-primary, $alpha: 1);
-    overflow: hidden;
-    
 }
 
 
-.navbar{
+.navbar {
     align-items: center;
     padding: 0;
-    img{
+
+    img {
         height: 2rem;
         margin-right: 3rem;
     }
 }
 
-.navbar-collapse{
+.navbar-collapse {
     justify-content: space-between;
 }
-.navbar-nav{
+
+.navbar-nav {
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -41,16 +43,28 @@ $nav-primary: #023E70;
     color: white;
     font-size: calc(.55rem + .5vw);
     font-weight: 500;
-    small{
+
+    small {
         display: block;
     }
 }
 
-.nav_right{
+.dropdown-toggle::after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    border-top: 0;
+    border-right: 0 solid transparent;
+    border-bottom: 0;
+    border-left: 0 solid transparent;
+}
+
+.nav_right {
     position: relative;
     background-color: white;
+    border-left: 3px solid $nav-hover;
+
     // z-index: 5;
-    &:before{
+    &:before {
         content: "";
         position: absolute;
         width: 2000px;
@@ -59,21 +73,59 @@ $nav-primary: #023E70;
         height: 100%;
         // z-index: -1;
     }
+
     li:nth-child(2) {
-        .nav-link{
-        padding-right: 0;
+        .nav-link {
+            padding-right: 0;
         }
-      }
+    }
 
-    
+
+
+
+
 }
 
-.navbar-light .navbar-nav{
-    justify-content: space-between!important;
+.nav_right .nav-link-right {
+    // display: inline-block;
+    color: black !important;
+    position: relative;
+    span{
+        background-color: $nav-hover;
+        color: white;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -110%;
+    transition: all.3s ease-in-out;
+    &:hover{
+        background-color: black;
+        
+    }
+    }
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: black;
+.navbar-light .navbar-nav {
+    justify-content: space-between !important;
+}
+
+.navbar-light .navbar-toggler {
+    margin: .5rem 0;
+    border-color: rgba(0, 0, 0, 0.7);
 }
 
 
+@media(max-width: 992px) {
+    .nav_right {
+        background-color: $nav-primary;
+        border-left: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
