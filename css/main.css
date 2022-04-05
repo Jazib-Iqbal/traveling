@@ -9336,6 +9336,8 @@ body {
 
 .hero_sec {
   position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .hero_sec:before {
@@ -9352,6 +9354,11 @@ body {
 
 .hero_sec img {
   width: 100%;
+  position: absolute;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 
 .hero_sec .hero_text {
@@ -9370,22 +9377,40 @@ body {
 }
 
 .hero_sec .hero_text .hero_text-inner h2 {
-  font-size: 7em;
+  font-size: 10em;
+  line-height: 7rem;
+  padding-top: 10rem;
+  font-weight: 500;
 }
 
 .hero_sec .hero_text .hero_text-inner h2 small {
-  display: inline;
-  font-size: .11em;
+  display: block;
+  font-size: 12%;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 100;
 }
 
 .hero_sec .hero_text .hero_text-inner h2 small:before {
   position: absolute;
   content: '';
-  left: -100%;
+  left: -10%;
   top: 50%;
-  height: 2px;
-  width: .5rem;
+  height: 3px;
+  width: 2rem;
+  background-color: yellow;
+}
+
+.hero_sec .hero_text .hero_text-inner h2 small:after {
+  position: absolute;
+  content: '';
+  right: -10%;
+  top: 50%;
+  height: 3px;
+  width: 2rem;
   background-color: yellow;
 }
 
