@@ -5,9 +5,11 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    overflow-y: auto;
 }
 header{
-    overflow: hidden;
+    
 }
 
 $nav-hover: #019CE4;

@@ -9225,10 +9225,8 @@ fieldset:disabled .btn {
 
 body {
   font-family: 'Open Sans', sans-serif;
-}
-
-header {
   overflow: hidden;
+  overflow-y: auto;
 }
 
 .nav_wrapper {
