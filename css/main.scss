@@ -5,6 +5,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+header{
     overflow: hidden;
 }
 
@@ -90,22 +92,24 @@ $nav-primary: #023E70;
     // display: inline-block;
     color: black !important;
     position: relative;
-    span{
+
+    span {
         background-color: $nav-hover;
         color: white;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-    line-height: 2rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: -110%;
-    transition: all.3s ease-in-out;
-    &:hover{
-        background-color: black;
-        
-    }
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        line-height: 2rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: -110%;
+        transition: all.3s ease-in-out;
+
+        &:hover {
+            background-color: black;
+
+        }
     }
 }
 
@@ -117,6 +121,69 @@ $nav-primary: #023E70;
     margin: .5rem 0;
     border-color: rgba(0, 0, 0, 0.7);
 }
+
+
+.hero_sec {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0,68,92);
+        background: linear-gradient(180deg, rgba(0,68,92,0.3) 0%, rgba(0,7,10,1) 95%);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .hero_text {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+
+        .hero_text-inner {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            font-size: calc(.5rem + .5vw);
+
+            h2{
+                font-size: 7em;
+                small{
+                    display: inline;
+                    font-size: .11em;
+                    position: relative;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        left: -100%;
+                        top: 50%;
+                        height: 2px;
+                        width: .5rem;
+                        background-color: yellow;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+.aabc{
+    width: 100%;
+    height: 5rem;
+    background-color: green;
+}
+
 
 
 @media(max-width: 992px) {
