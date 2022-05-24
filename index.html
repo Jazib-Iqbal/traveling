@@ -25,7 +25,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="fa fa-bars"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="nav_left">
@@ -95,27 +95,29 @@
                 </div><!-- /.nav_left -->
 
 
-                <div class="nav_right">
+                
 
-                  <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+              </div><!-- /.collapse navbar-collapse -->
 
+              <div class="nav_right contact_icon">
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-link-right" aria-current="page" href="#"><span
-                          class="fa fa-phone"></span></a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-link-right" aria-current="page" href="#">1-123-1234-1234-123 <small>Toll
-                          free & 24/7 available</small></a>
-                    </li>
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
 
 
-                  </ul>
+                  <li class="nav-item contact_icon">
+                    <a class="nav-link nav-link-right" aria-current="page" href="#"><span
+                        class="fa fa-phone"></span></a>
+                  </li>
 
-                </div><!-- /.nav_right -->
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-right" aria-current="page" href="#">1-123-1234-1234-123 <small>Toll
+                        free & 24/7 available</small></a>
+                  </li>
 
-              </div>
+
+                </ul>
+
+              </div><!-- /.nav_right -->
             </div>
           </nav>
         </div><!-- /.nav_wrapper-inner -->
@@ -180,9 +182,17 @@
 
                         </li>
                         <li>
-                          <input type="date">
+                          <span class="input_wrap">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <input type="date">
+                          </span>
                         </li>
-                        <li><input type="date"></li>
+                        <li>
+                          <span class="input_wrap">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <input type="date">
+                          </span>
+                        </li>
                         <li>
                           <div class="select_sec">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -229,9 +239,17 @@
 
                       </li>
                       <li>
-                        <input type="date">
+                        <span class="input_wrap">
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          <input type="date">
+                        </span>
                       </li>
-                      <li><input type="date"></li>
+                      <li>
+                        <span class="input_wrap">
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          <input type="date">
+                        </span>
+                      </li>
                       <li>
                         <div class="select_sec">
                           <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -278,9 +296,17 @@
 
                         </li>
                         <li>
-                          <input type="date">
+                          <span class="input_wrap">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <input type="date">
+                          </span>
                         </li>
-                        <li><input type="date"></li>
+                        <li>
+                          <span class="input_wrap">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <input type="date">
+                          </span>
+                        </li>
                         <li>
                           <div class="select_sec">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -299,6 +325,22 @@
                   </div>
                 </div>
 
+                <div class="check_box-section">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Create multi-city route
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Non stop flight
+                    </label>
+                  </div>
+                </div><!-- /.check_box-section -->
+                
+
               </section><!-- /.service_section -->
 
 
@@ -307,11 +349,65 @@
           <!-- /.container -->
         </div><!-- /.hero_text -->
 
+        <section class="location_section">
+          <div class="location_section-inner">
+  
+            <div class="location_inner-left">
 
 
-      </section>
+            </div><!-- /.location_inner-left -->
 
+            <div class="location_inner-right">
 
+              <div class="swiper-container slider1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <figure>
+                        
+                        <img src="img/location-card-a.png" alt="">
+
+                        <!-- <figcaption>
+                          <h2>hello</h2>
+                        </figcaption> -->
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        
+                        <img src="img/location-card-b.png" alt="">
+
+                        <!-- <figcaption>
+                          <h2>hello</h2>
+                        </figcaption> -->
+                      </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <figure>
+                        
+                        <img src="img/location-card-c.png" alt="">
+
+                        <!-- <figcaption>
+                          <h2>hello</h2>
+                        </figcaption> -->
+                      </figure>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            </div><!-- /.location_inner-right -->
+  
+          </div><!-- /.location_section-inner -->
+        </section><!-- /.location_section -->
+
+      </section><!-- /.hero_sec -->
+
+      
+
+      
 
 
 
@@ -386,8 +482,8 @@
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
+          slidesPerView: 4,
+          spaceBetween: 10,
         },
       },
       scrollbar: {
