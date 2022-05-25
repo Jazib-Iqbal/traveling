@@ -11901,7 +11901,7 @@ body {
 
 .hero_sec .location_section {
   position: absolute;
-  top: 70%;
+  top: 90%;
   width: 100%;
   height: 20rem;
 }
@@ -11916,6 +11916,21 @@ body {
   left: 0;
   width: calc(100vw - calc(1140px + (50% - 1140px / 2)));
   min-height: 100%;
+  padding-right: 1rem;
+}
+
+.location_inner-left h2, .location_inner-left .h2 {
+  color: #01396D;
+  padding-top: 40%;
+  padding-left: 1rem;
+}
+
+.location_inner-left img {
+  position: static;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  width: 60%;
+  margin-top: 1rem;
 }
 
 .location_inner-right {
@@ -11924,16 +11939,19 @@ body {
   position: relative;
   z-index: 5;
   overflow: hidden;
+  padding: 0 12px;
 }
 
 .location_section .location_inner-right .swiper-slide figure {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
-.location_section .location_inner-right .swiper-slide figure:hover .swiper-slide figcaption {
-  display: block;
+.location_section .location_inner-right .swiper-slide figure:hover figcaption {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .location_section .location_inner-right .swiper-slide figure img {
@@ -11947,9 +11965,30 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #eaeaea;
+  background: linear-gradient(236deg, rgba(159, 230, 255, 0.708049) 0%, #0ab1f9 77%);
   padding: .5rem;
-  display: none;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.location_section .location_inner-right .swiper-slide figure figcaption h2, .location_section .location_inner-right .swiper-slide figure figcaption .h2 {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.location_section .location_inner-right .swiper-slide figure figcaption a {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  color: #01396D;
+  padding: .5rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  display: inline-block;
 }
 
 @media (max-width: 992px) {

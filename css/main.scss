@@ -19,7 +19,7 @@ $nav-primary: #023E70;
 
 
 
-.container{
+.container {
     max-width: 1140px;
 }
 
@@ -421,7 +421,7 @@ $nav-primary: #023E70;
 
     }
 
-    
+
 }
 
 .check_box-section {
@@ -432,7 +432,7 @@ $nav-primary: #023E70;
 }
 
 
-.abc{
+.abc {
     width: 100%;
     height: 20rem;
     background-color: black;
@@ -485,22 +485,22 @@ $nav-primary: #023E70;
 }
 
 
-.hero_sec .location_section{
+.hero_sec .location_section {
     position: absolute;
-    top: 70%;
+    top: 90%;
     width: 100%;
     height: 20rem;
     // background-color: green;
     // display: flex;
     // opacity: .7;
-    
+
 }
 
-.location_section-inner{
+.location_section-inner {
     position: relative;
 }
 
-.location_inner-left{
+.location_inner-left {
     position: absolute;
     top: 0;
     left: 0;
@@ -508,9 +508,24 @@ $nav-primary: #023E70;
     // background-color:orange;
     // z-index: -1;
     min-height: 100%;
+    padding-right: 1rem;
+
+    h2{
+        color: $nav_item-hover;
+        padding-top: 40%;
+        padding-left: 1rem;
+
+    }
+
+    img{
+        position: static;
+        transform: translate(0, 0);
+        width: 60%;
+        margin-top: 1rem;
+    }
 }
 
-.location_inner-right{
+.location_inner-right {
     width: calc(1140px + (50% - 1140px / 2));
     // background-color:blue;
     margin-left: auto;
@@ -518,36 +533,61 @@ $nav-primary: #023E70;
     position: relative;
     z-index: 5;
     overflow: hidden;
+    padding: 0 12px;
 }
 
-.location_section{
-    .location_inner-right .swiper-slide{
-        figure{
+.location_section {
+    .location_inner-right .swiper-slide {
+        figure {
             width: 100%;
             height: 100%;
             position: relative;
-            &:hover{
-                .swiper-slide figcaption{
-                    display: block;
+            overflow: hidden;
+
+            &:hover {
+                figcaption {
+                    // display: block!important;
+                    transform: translateX(0);
                 }
-                
+
             }
-            
-            img{
+
+            img {
                 width: 100%;
                 position: static;
             }
 
-            figcaption{
+            figcaption {
                 position: absolute;
                 top: 0;
                 left: 0;
                 height: 100%;
                 width: 100%;
-                background-color: #eaeaea;
+                // background: rgb(159,230,255);
+                background: linear-gradient(236deg, rgba(159, 230, 255, 0.7080486229890902) 0%, rgba(10, 177, 249, 1) 77%);
                 padding: .5rem;
-                display: none;
-                
+                // display: none;
+                transform: translateX(-100%);
+                transition: all .3s ease-in-out;
+
+                h2{
+                    color: white;
+                    font-size: 1.3rem;
+
+                }
+
+                a {
+                    position: absolute;
+                    bottom: 0.5rem;
+                    left: 0.5rem;
+                    color: $nav_item-hover;
+                    padding: .5rem;
+                    background-color: white;
+                    padding: 0.5rem 1rem;
+                    font-size: 0.8rem;
+                    text-decoration: none;
+                    display: inline-block;
+                }
             }
         }
     }
@@ -557,18 +597,18 @@ $nav-primary: #023E70;
 
 @media(max-width: 992px) {
 
-    .nav_wrapper-inner{
+    .nav_wrapper-inner {
         position: relative;
         padding: .5rem 0;
 
-        .navbar-toggler{
+        .navbar-toggler {
             position: absolute;
             right: 1%;
             top: 0;
             transform: translateY(-25%);
         }
 
-        .contact_icon{
+        .contact_icon {
             position: absolute;
             right: 1.8rem;
             top: 0;
@@ -591,19 +631,13 @@ $nav-primary: #023E70;
 
     }
 
-    // .nav_wrapper {
 
-    //     position: relative;
-    // }
-    // .contact_icon{
-    //     position: absolute;
-    //     top: 5%;
-    //     left: 50%;
-    // }
-
-    .hero_sec .location_section{
+    .hero_sec .location_section {
         // position: static;
         // transform: translate(0, 0);
         top: 100%;
     }
+
+
 }
+
