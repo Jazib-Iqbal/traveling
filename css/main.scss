@@ -1480,6 +1480,24 @@ $white: #ffffff;
 
 
 
+.adventure_places{
+    background-image: url(../img/advanture-places-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background-color: rgba($color: $nav_item-hover, $alpha: .9);
+    }
+}
+
+
+
 @media(max-width: 1199px) {
 
     .hero_sec .hero_text .hero_text-inner h2 {
